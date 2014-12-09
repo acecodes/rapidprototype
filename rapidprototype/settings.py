@@ -52,7 +52,6 @@ ROOT_URLCONF = 'rapidprototype.urls'
 
 WSGI_APPLICATION = 'rapidprototype.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 

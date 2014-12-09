@@ -1,5 +1,8 @@
 import sys
+import os
 from django.conf import settings
+
+BASE_DIR = os.path.dirname(__file__)
 
 settings.configure(
 	DEBUG=True,
@@ -11,7 +14,8 @@ settings.configure(
 		'django.contrib.webdesign',
 		'rapidprototype'
 		),
-	STATIC_URL='/static/'
+	STATIC_URL='/static/',
+	SITE_PAGES_DIRECTORY=os.path.join(BASE_DIR, 'pages')
 	)
 
 if __name__ == '__main__':
